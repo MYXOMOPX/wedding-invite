@@ -1,0 +1,85 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.invite-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.invite {
+    position: relative;
+    width: 100%;
+}
+
+.bg-image {
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background-size: cover;
+    background-image: url(../img/wedding-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 50% bottom 50%;
+}
+#blank-dummy {
+    height: 30vh;
+    width: 100vw;
+}
+
+#background-blur {
+    transition: all 0.4s;
+    position: fixed;
+    height: calc(100vh + 400px);
+    width: calc(100vw + 400px);
+    top: -400px;
+    left: -400px;
+}
+
+#background-blur.active {
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(6px);
+    visibility: visible;
+}
+
+#content-scroll-dummy {
+    height: 200vh;
+}
+
+.content-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.content-page {
+    transition: all 0.4s;
+    font-size: 40px;
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content-page.active {
+    transition: all 0.8s;
+    visibility: visible;
+    opacity: 1;
+}
+

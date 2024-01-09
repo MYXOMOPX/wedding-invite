@@ -1,0 +1,20 @@
+
+
+.char-img {
+    position: absolute;
+}
+
+.char-img_boy {
+    min-height: 65vh;
+
+    bottom: -15vh;
+    right: 0;
+}
+
+.char-img_girl {
+    transform: scaleX(-1);
+    min-height: 60vh;
+
+    bottom: -15vh;
+    left: 0;
+}
