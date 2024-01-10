@@ -1,4 +1,6 @@
 .block {display: block;}
+.flex {display: flex;}
+.flex.space-around {justify-content: space-around}
 
 .text-center {text-align: center;}
 .text-right {text-align: right;}
