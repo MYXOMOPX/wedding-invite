@@ -1,6 +1,7 @@
 body, html {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .invite-container {
@@ -17,8 +18,8 @@ body, html {
 }
 
 .bg-image {
-    height: 100vh;
-    width: 100vw;
+    height: calc(100vh + 10px);
+    width: calc(100vw + 10px);
 
     position: fixed;
     top: 0;
@@ -38,15 +39,13 @@ body, html {
 #background-blur {
     transition: all 0.4s;
     position: fixed;
-    height: calc(100vh + 400px);
-    width: calc(100vw + 400px);
-    top: -400px;
-    left: -400px;
+    height: calc(100vh + 10px);
+    width: calc(100vw + 10px);
 }
 
 #background-blur.active {
     background-color: rgba(0,0,0,0.7);
-    backdrop-filter: blur(6px);
+    backdrop-filter: drop-shadow(0px 0px 1px black) blur(10px);
     visibility: visible;
 }
 
@@ -73,7 +72,7 @@ body, html {
     font-size: 40px;
     opacity: 0;
     position: absolute;
-    width: 100vw;
+    width: calc(100vw + 1px);
     height: 100vh;
 }
 

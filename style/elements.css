@@ -1,20 +1,20 @@
 
 
-.char-img {
-    position: absolute;
+.text-box {
+    background-color: rgba(0,0,0,0.6);
+    padding: 6px;
+    text-align: center;
+    color: white;
 }
 
-.char-img_boy {
-    min-height: 65vh;
-
-    bottom: -15vh;
-    right: 0;
+.text {
+    font-family: 'Roboto', sans-serif;
 }
 
-.char-img_girl {
-    transform: scaleX(-1);
-    min-height: 60vh;
+.text.text-big {
+    font-size: 50px;
+}
 
-    bottom: -15vh;
-    left: 0;
+.text.bold {
+    font-weight: bold;
 }

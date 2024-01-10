@@ -1,0 +1,28 @@
+.block {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mh-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mv-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mt-1 {margin-top: 4px}
+.mt-2 {margin-top: 8px}
+.mt-3 {margin-top: 12px}
+.mt-4 {margin-top: 16px}
+.mt-5 {margin-top: 20px}
+
+.mb-1 {margin-bottom: 4px}
+.mb-2 {margin-bottom: 8px}
+.mb-3 {margin-bottom: 12px}
+.mt-4 {margin-bottom: 16px}
+.mb-5 {margin-bottom: 20px}
