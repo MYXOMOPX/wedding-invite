@@ -14,6 +14,9 @@
 .text.text-big {
     font-size: 50px;
 }
+.text.text-medium {
+    font-size: 40px;
+}
 
 .text.bold {
     font-weight: bold;

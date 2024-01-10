@@ -1,0 +1,17 @@
+
+.slide-from-right {
+    transition: all 0.5s;
+    transform: translateX(100%);
+}
+.content-page.active .slide-from-right {
+    transition: all 0.5s;
+    transform: translateX(0);
+}
+
+.slide-from-left {
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+.content-page.active .slide-from-left {
+    transform: translateX(0);
+}

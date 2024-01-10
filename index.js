@@ -1,9 +1,14 @@
 const pageScrollMultiplier = 0.3;
 
-const getElementDataEntity = (entityName) => {
+const getAllDataElements = (attributeName = "x-data") => {
     const elements = Array.from(document.getElementsByClassName("dataEntity"));
-    return elements.filter(it => it.getAttribute("x-data") === entityName)[0];
+    return elements.filter(it => it.hasAttribute(attributeName));
 }
+//
+// const getElementDataEntity = (entityName) => {
+//     const elements = Array.from(document.getElementsByClassName("dataEntity"));
+//     return elements.filter(it => it.getAttribute("x-data") === entityName)[0];
+// }
 
 function initiate() {
     const pagesElements = document.getElementsByClassName("content-page");
@@ -30,18 +35,24 @@ function initiate() {
         }
     })
 
-    const prefillFields = ["fullName"]
     const prefillData = () => {
         const params = new URL(document.location).searchParams;
         const currentUser = params.get("guest");
-        const data = guestsData[currentUser];
-        console.log("GUEST",data,currentUser)
-        if (!data) return;
-        for (let prefillField of prefillFields) {
-            const element = getElementDataEntity(prefillField);
-            console.log("FILL",element,prefillField)
-            if (!element) return;
-            element.innerHTML = data[prefillField];
+        const data = guestsData[currentUser] || guestsData.unknown;
+
+        for (let prefillElement of getAllDataElements("x-data")) {
+            const prefillField = prefillElement.getAttribute("x-data");
+            console.log("FILL",prefillElement,prefillField)
+            prefillElement.innerHTML = data[prefillField];
+        }
+
+        for (let conditionElement of getAllDataElements("x-shown")) {
+            const attr = conditionElement.getAttribute("x-shown");
+            if (!data[attr]) conditionElement.className += " hidden"
+        }
+        for (let conditionElement of getAllDataElements("x-shown-not")) {
+            const attr = conditionElement.getAttribute("x-shown-not");
+            if (data[attr]) conditionElement.className += " hidden"
         }
     }
 

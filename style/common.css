@@ -74,11 +74,13 @@ body, html {
     position: absolute;
     width: calc(100vw + 1px);
     height: 100vh;
+    pointer-events: none;
 }
 
 .content-page.active {
     transition: all 0.8s;
     visibility: visible;
     opacity: 1;
+    pointer-events: auto;
 }
 
