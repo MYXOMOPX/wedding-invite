@@ -1,7 +1,7 @@
 const guestsData = {
     "unknown": {fullName: "Дорогой гость"},
 
-    "kirokishi": {fullName: "Ириша", secondDay: true},
+    "kirokoshi": {fullName: "Ириша", secondDay: true},
     "myxomopx": {fullName: "Вахтёров Александр Радикович", secondDay: true},
     "varparents": {fullName: "Вахтёров\xa0Радик\xa0Назилович и Вахтёрова\xa0Ольга\xa0Алексеевна", multiple: true, secondDay: true},
     "maksparents": {fullName: "Максимова\xa0Виктория\xa0Владимировна и Максимов\xa0Владимир\xa0Фёдорович", multiple: true},
