@@ -16,3 +16,30 @@
     bottom: -15vh;
     left: -2vw;
 }
+
+.char-img_bengalcat {
+    height: 29vh;
+    bottom: -4vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.char-img_graycat {
+    height: 18vh;
+    bottom: -2vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.char-img_rabbit {
+    height: 21vh;
+    bottom: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}

@@ -6,6 +6,7 @@
 .text-right {text-align: right;}
 
 .hidden { display: none }
+.underline { text-decoration: underline }
 
 .mh-auto {
     margin-left: auto;

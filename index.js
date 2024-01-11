@@ -4,17 +4,13 @@ const getAllDataElements = (attributeName = "x-data") => {
     const elements = Array.from(document.getElementsByClassName("dataEntity"));
     return elements.filter(it => it.hasAttribute(attributeName));
 }
-//
-// const getElementDataEntity = (entityName) => {
-//     const elements = Array.from(document.getElementsByClassName("dataEntity"));
-//     return elements.filter(it => it.getAttribute("x-data") === entityName)[0];
-// }
 
 function initiate() {
-    const pagesElements = document.getElementsByClassName("content-page");
     const contentScrollDummyElement = document.getElementById("content-scroll-dummy");
 
-    contentScrollDummyElement.style.height = `calc(${pagesElements.length} * 100vh * ${pageScrollMultiplier} + 100vh)`;
+    const getPageElements = () => {
+        return Array.from(document.getElementsByClassName("content-page")).filter(it => !it.classList.contains("hidden"));
+    }
 
     const getCurrentActivePage = () =>  Math.floor(window.scrollY / (window.innerHeight * pageScrollMultiplier));
 
@@ -29,9 +25,13 @@ function initiate() {
         }
 
 
-        for (let i = 0; i < pagesElements.length; i++) {
+        for (let i = 0; i < getPageElements().length; i++) {
             const isShown = i === currentPageIndex;
-            pagesElements[i].className = `content-page${isShown ? " active" : ""}`
+            const pageElement = getPageElements()[i];
+            let classList = Array.from(pageElement.classList);
+            if (isShown && classList.indexOf("active") < 0) classList.push("active");
+            if (!isShown && classList.indexOf("active") >= 0) classList = classList.filter(it => it !== "active")
+            pageElement.className = classList.join(" ")
         }
     })
 
@@ -57,6 +57,8 @@ function initiate() {
     }
 
     prefillData();
+
+    contentScrollDummyElement.style.height = `calc(${getPageElements().length} * 100vh * ${pageScrollMultiplier} + 100vh)`;
 }
 
 
