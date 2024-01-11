@@ -11,6 +11,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.text-orange {
+    color: #e96a32;
+}
+
 .text.text-big {
     font-size: 22px;
 }

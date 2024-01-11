@@ -73,6 +73,6 @@
         left: calc((100vw - var(--canvas-size) ) / 4 - 9vw);
     }
     .char-img_boy {
-        right: calc((100vw - var(--canvas-size) ) / 4 - 9vw);
+        right: calc((100vw - var(--canvas-size) ) / 4 - 8vw);
     }
 }

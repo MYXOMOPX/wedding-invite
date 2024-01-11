@@ -11,7 +11,7 @@ const guestsData = {
     "zhanna": {fullName: "Вахтёрова\xa0Жанна\xa0Дмитриевна", secondDay: true},
     "raya": {fullName: "Раечка"},
     "olya": {fullName: "Олечка"},
-    "kotyanka": {fullName: "Асёна", secondDay: true},
+    "kotyanka": {fullName: "Асёна", secondDay: true, asyaMode: true},
     "mari": {fullName: "Мари", secondDay: true},
     "nik": {fullName: "Ник-Ник", secondDay: true},
     "sladenkyi": {fullName: "Тёмочка", secondDay: true},
