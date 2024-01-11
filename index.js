@@ -58,7 +58,7 @@ function initiate() {
 
     prefillData();
 
-    contentScrollDummyElement.style.height = `calc(${getPageElements().length} * 100vh * ${pageScrollMultiplier} + 100vh)`;
+    contentScrollDummyElement.style.height = `calc(${getPageElements().length} * 100vh * ${pageScrollMultiplier} + 80vh)`;
 }
 
 

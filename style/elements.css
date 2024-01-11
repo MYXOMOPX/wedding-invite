@@ -12,12 +12,19 @@
 }
 
 .text.text-big {
-    font-size: 50px;
+    font-size: 22px;
 }
 .text.text-medium {
-    font-size: 40px;
+    font-size: 16px;
 }
 
 .text.bold {
     font-weight: bold;
+}
+
+.icon.icon-big {
+    width: 20vw;
+}
+.icon.icon-small {
+    width: 12vw;
 }
