@@ -4,6 +4,10 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 .invite-container {
     display: flex;
     align-items: center;
@@ -27,13 +31,9 @@ body, html {
     z-index: -1;
 
     background-size: cover;
-    background-image: url(../img/wedding-bg.png);
+    background-image: url(../img/wedding-bg_05.png);
     background-repeat: no-repeat;
     background-position: right 50% bottom 50%;
-}
-#blank-dummy {
-    height: 30vh;
-    width: 100vw;
 }
 
 #background-blur {
@@ -82,4 +82,10 @@ body, html {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+}
+
+.content-page-snap {
+    width: 80vw;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }

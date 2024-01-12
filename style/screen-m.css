@@ -6,4 +6,8 @@
     .char-img_boy, .char-img_girl {
         display: block;
     }
+
+    .bg-image {
+        background-image: url(../img/wedding-bg.png);
+    }
 }

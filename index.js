@@ -59,6 +59,13 @@ function initiate() {
     prefillData();
 
     contentScrollDummyElement.style.height = `calc(${getPageElements().length} * 100vh * ${pageScrollMultiplier} + 80vh)`;
+
+    for (let i = 0; i < getPageElements().length; i++) {
+        const sectionDiv = document.createElement("div");
+        sectionDiv.style.height = `calc(${pageScrollMultiplier} * 100vh + 1px)`
+        sectionDiv.className = "content-page-snap";
+        contentScrollDummyElement.append(sectionDiv)
+    }
 }
 
 
