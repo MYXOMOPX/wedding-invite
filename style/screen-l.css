@@ -79,4 +79,8 @@
     .scroll-down-icon {
         display: none;
     }
+
+    #mobile-quick-nav {
+        display: none;
+    }
 }
