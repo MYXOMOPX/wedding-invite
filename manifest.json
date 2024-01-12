@@ -1,0 +1,14 @@
+{
+  "name": "Wedding Invite",
+  "short_name": "WedInvite",
+  "theme_color": "#e96a32",
+  "background_color": "#e96a32",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "author": "myxomopx",
+  "icons": [
+    "./img/ring.png"
+  ]
+}
