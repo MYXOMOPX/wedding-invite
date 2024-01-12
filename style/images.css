@@ -44,3 +44,33 @@
     left: 0;
     right: 0;
 }
+
+.scroll-down-icon {
+    position: absolute;
+    z-index: 20;
+    bottom: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    animation: scrollDownIconAnimation 8s infinite ease-in-out;
+}
+
+@keyframes scrollDownIconAnimation {
+    0% {
+        transform: translateY(1vh);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(-2vh);
+        opacity: 1;
+    }
+    30%, 100% {
+        transform: translateY(-2vh);
+        opacity: 0;
+    }
+}

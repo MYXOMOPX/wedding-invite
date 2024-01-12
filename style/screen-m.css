@@ -2,4 +2,8 @@
     .char-img {
         display: none;
     }
+
+    .char-img_boy, .char-img_girl {
+        display: block;
+    }
 }
