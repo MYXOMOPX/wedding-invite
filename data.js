@@ -23,6 +23,7 @@ const guestsData = {
     "lisiy": {fullName: "Малышев Александр Владиславович", secondDay: true},
     "edvard1991": {fullName: "Жиляк Эдвард Анджеевич", secondDay: true},
     "mazitovi": {fullName: "Мазитов\xa0Артур\xa0Рустемович и Тихомирова\xa0Анжелика\xa0Борисовна", secondDay: true},
+    "shini": {fullName: "Дорогая Шинь", secondDay: true},
 }
 
 for (let key of Object.keys(guestsData)) {
