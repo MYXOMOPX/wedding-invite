@@ -1,4 +1,4 @@
-const pageScrollMultiplier = 0.3;
+const pageScrollMultiplier = 0.6;
 
 const getAllDataElements = (attributeName = "x-data") => {
     const elements = Array.from(document.getElementsByClassName("dataEntity"));
@@ -42,7 +42,6 @@ function initiate() {
 
         for (let prefillElement of getAllDataElements("x-data")) {
             const prefillField = prefillElement.getAttribute("x-data");
-            console.log("FILL",prefillElement,prefillField)
             prefillElement.innerHTML = data[prefillField];
         }
 
